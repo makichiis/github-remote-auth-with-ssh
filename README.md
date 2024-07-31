@@ -44,7 +44,8 @@ key and follow steps
 
 6. To avoid invalid attribution (commits not counting as your own), make sure to set your identity in the config:
 
-```sh 
+```sh
+cd "<path to local repository>"
 git config user.name "<your username>"
 git config user.email "<your github email>" 
 ```
