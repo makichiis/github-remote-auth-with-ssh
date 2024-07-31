@@ -24,9 +24,9 @@ Anyways, I'll try to keep this repo updated. Contributions are welcome.
 If anyone wants to add Mac/Windows sections, feel free to PR.
 
 ## tl;dr - Per-Repository Authentication 
+1. Generate local SSH key via `ssh-keygen -t ed25519 -a 100 -C github_linked_email@whatever.com`
 
-1. Generate local SSH key via `ssh-keygen -t ed25519 -C github_linked_email@whatever.com`
-
+[comment]: <> (`-a 100` courtesy of rynathefox)
 > SHA-2 signed RSA keys are valid as well 
 
 2. Add key to ssh-agent via `$(eval "$(ssh-agent -s)") && ssh-add <private SSH key path>`
