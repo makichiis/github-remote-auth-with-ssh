@@ -32,7 +32,9 @@ If anyone wants to add Mac/Windows sections, feel free to PR.
 2. Add key to ssh-agent via `$(eval "$(ssh-agent -s)") && ssh-add <private SSH key path>`
 
 3. Create SSH key on GitHub `Profile icon in top-right > Settings > SSH and GPG keys`, add 
-key and follow steps 
+key and follow steps
+
+> NOTE: You only have to do the first 3 steps ONCE per system.
 
 4. Set git-url to SSH endpoint 
 `(in local repo) git remote set-url origin git@github.com:OWNER/REPOSITORY.git`
