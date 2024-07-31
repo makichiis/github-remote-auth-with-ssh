@@ -50,3 +50,6 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh
 
+TODOs:
+- [ ] Finish long section(s) 
+- [ ] Add automation script for Linux/BSD 
