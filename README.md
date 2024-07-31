@@ -1,5 +1,7 @@
 # Authenticating Git(Hub) via SSH
 
+> NOTE: Current auth method does not credit contributors by github user properly. looking into why.
+
 Since existing solutions and guides are inconsistent with newer versions of the GitHub 
 workflow and interface, I would like this repository to serve as a solution to SSH 
 authentication until it follows the same fate.
