@@ -1,7 +1,5 @@
 # Authenticating Git(Hub) via SSH
 
-> NOTE: Current auth method does not credit contributors by github user properly. looking into why.
-
 Since existing solutions and guides are inconsistent with newer versions of the GitHub 
 workflow and interface, I would like this repository to serve as a solution to SSH 
 authentication until it follows the same fate.
@@ -28,20 +26,30 @@ If anyone wants to add Mac/Windows sections, feel free to PR.
 ## tl;dr - Per-Repository Authentication 
 1. Generate local SSH key via `ssh-keygen -t ed25519 -a 100 -C github_linked_email@whatever.com`
 
-[comment]: <> (`-a 100` courtesy of rynathefox)
+[comment]: <> (`-a 100` courtesy of https://github.com/CapnRyna : "makes key significantly harder to brute-force crack")
 > SHA-2 signed RSA keys are valid as well 
 
-2. Add key to ssh-agent via `$(eval "$(ssh-agent -s)") && ssh-add <private SSH key path>`
+2. Add key to ssh-agent via `eval "$(ssh-agent -s)" && ssh-add <private SSH key path>`
+
+> The official GitHub guide specifies running `ssh-agent -s` via `eval`, though I'm not sure why.
 
 3. Create SSH key on GitHub `Profile icon in top-right > Settings > SSH and GPG keys`, add 
 key and follow steps
 
 > NOTE: You only have to do the first 3 steps ONCE per system.
 
-4. Set git-url to SSH endpoint 
-`(in local repo) git remote set-url origin git@github.com:OWNER/REPOSITORY.git`
+4. Set git-url to SSH endpoint (in local repo) `git remote set-url origin git@github.com:OWNER/REPOSITORY.git`
 
 5. Verify connection validity with `ssh -T git@github.com`
+
+6. To avoid invalid attribution (commits not counting as your own), make sure to set your identity in the config:
+
+```sh 
+git config user.name "<your username>"
+git config user.email "<your github email>" 
+```
+
+> If you want these settings to apply globally, then call `git config --global ...` instead.
 
 ## tl;dr - System-Wide Authentication (WIP)
 Nothing, yet.
