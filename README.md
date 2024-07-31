@@ -35,7 +35,7 @@ If anyone wants to add Mac/Windows sections, feel free to PR.
 key and follow steps 
 
 4. Set git-url to SSH endpoint 
-`(in local repo) git remote set-url origin git@github.com:OWNER:REPOSITORY.git`
+`(in local repo) git remote set-url origin git@github.com:OWNER/REPOSITORY.git`
 
 5. Verify connection validity with `ssh -T git@github.com`
 
