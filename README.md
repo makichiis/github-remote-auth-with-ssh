@@ -14,7 +14,7 @@ An issue with the way GitHub handles SSH authentication -- which, admittedly, my
 a few others have dealt with countless times -- is that it's super easy to forget the
 steps necessary to properly set up SSH authentication, since it's something that's done 
 once and is forgotten before the brain can intuit how to do any of it (it doesn't help that 
-it's somewhat though not entirely] GitHub specific). I personally cannot be asked to re-read
+it's somewhat GitHub-specific). I personally cannot be asked to re-read
 the guide every time I just want to quickly push something before going to do something else
 (maybe this is a me problem).
 
