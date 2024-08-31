@@ -38,7 +38,7 @@ key and follow steps
 
 > NOTE: You only have to do the first 3 steps ONCE per system.
 
-4. Set git-url to SSH endpoint (in local repo) `git remote set-url origin git@github.com:OWNER/REPOSITORY.git`
+4. Set git-url to SSH endpoint (in local repo) `git remote add origin git@github.com:OWNER/REPOSITORY.git`
 
 5. Verify connection validity with `ssh -T git@github.com`
 
